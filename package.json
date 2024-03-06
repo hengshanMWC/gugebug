@@ -1,0 +1,53 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "author": "mawencan",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "commit": "cz",
+    "lint:prettier": "prettier --write  \"src/**/*.{js,json,css,scss,vue,html,md}\"",
+    "lint:eslint": "eslint \"src/**/*.{vue,js,json,md,html}\" --fix",
+    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,postcss,css,scss,html}\"",
+    "lint:all": "npm run lint:prettier && npm run lint:stylelint && npm run lint:eslint"
+  },
+  "dependencies": {
+    "@wagmi/core": "^1.4.7",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@abmao/eslint-config-vue": "^2.1.1",
+    "@abmao/prettier-config": "^1.0.0",
+    "@abmao/stylelint-config-vue": "^0.0.2",
+    "@antfu/eslint-config-vue": "^0.43.1",
+    "@intlify/unplugin-vue-i18n": "^1.5.0",
+    "@unocss/eslint-config": "^0.57.6",
+    "@unocss/postcss": "^0.58.0",
+    "@unocss/preset-attributify": "^0.57.6",
+    "@unocss/transformer-directives": "^0.57.6",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "autoprefixer": "^10.4.16",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "postcss": "^8.4.31",
+    "postcss-pxtorem": "^6.0.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.1.0",
+    "stylelint": "^15.11.0",
+    "terser": "^5.24.0",
+    "unocss": "^0.57.6",
+    "vite": "^5.0.0",
+    "vite-plugin-compression": "^0.5.1"
+  },
+  "engines": {
+    "node": ">= 18.0.0",
+    "npm": ">= 8.0.0"
+  }
+}
